@@ -8,12 +8,8 @@ const mainNav = document.querySelector('.main-nav');
         FUNCTIONS
 /////////////////////////////////////////////////*/
 
-function doThis(e) {
-    console.log(e.target)
-}
-
 function toggleMenuOverlay() {
-    mainNav.classList.toggle('shown');
+        mainNav.classList.toggle('shown');
 }
 
 /*/////////////////////////////////////////////////
