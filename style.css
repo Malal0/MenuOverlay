@@ -23,7 +23,7 @@
                 NAV CLASSES
 ****************************************/
 
-.main-nav {
+.nav-class {
     /* border: 1px solid #FFF; */
     position: absolute;
     top: 0;
@@ -34,21 +34,21 @@
     margin-top: 1em;
 }
 
-.main-nav .content {
+.nav-class .content {
     display: flex;
 }
 
 /*******site logo*******/
-.main-nav .content .logo {
+.nav-class .content .logo {
     margin-right: auto;
 }
 
-.main-nav .content .logo img {
+.nav-class .content .logo img {
     height: 40px;
 }
 
 /*******menu btn*******/
-.main-nav .content .menu-btn {
+.nav-class .content .menu-btn {
     /* background-color: lightskyblue; */
     cursor: pointer;
     width: 33px;
@@ -59,34 +59,34 @@
     justify-content: space-between;
 }
 
-.main-nav .content .menu-btn .line {
+.nav-class .content .menu-btn .line {
     height: 4px;
     width: 100%;
     background-color: white;
     transition: 300ms ease-in-out;
 }
 
-.main-nav.shown .content .menu-btn .line {
+.nav-class.shown .content .menu-btn .line {
     width: calc(100% + 8px);
     transform: translateX(100%);
     pointer-events: none;
 }
 
-.main-nav.shown .content .menu-btn :first-child {
+.nav-class.shown .content .menu-btn :first-child {
     transform: translateY(350%) rotate(-225deg);
     opacity: 1;
 }
 
-.main-nav.shown .content .menu-btn :nth-child(2) {
+.nav-class.shown .content .menu-btn :nth-child(2) {
     opacity: 0;
 }
 
-.main-nav.shown .content .menu-btn :last-child {
+.nav-class.shown .content .menu-btn :last-child {
     transform: translateY(-350%) rotate(225deg);
     /* opacity: 1; */
 }
 
-.main-nav .content .nav-content {
+.nav-class .content .nav-content {
     background-color: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(10px);
     position: fixed;
@@ -102,22 +102,22 @@
     place-items: center;
 }
 
-.main-nav.shown .content .nav-content {
+.nav-class.shown .content .nav-content {
     transform: translateY(0%);
 }
 
-.main-nav .content .nav-content ul {
+.nav-class .content .nav-content ul {
     border: 1px solid white;
     /* height: 100%; */
     display: flex;
     flex-flow: column nowrap;
 }
 
-.main-nav .content .nav-content ul li:not(:last-child) {
+.nav-class .content .nav-content ul li:not(:last-child) {
     margin-bottom: 3em;
 }
 
-.main-nav .content .nav-content ul a {
+.nav-class .content .nav-content ul a {
     color: #FFF;
     background-color: salmon;
     display: block;
@@ -125,48 +125,4 @@
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.25em;
-}
-
-
-
-/****************************************
-HERO CLASSES
-****************************************/
-
-.hero {
-    height: 100vh;
-    background-color: #000;
-    background-image: url('https://images.unsplash.com/photo-1684357766172-3d6184d95c0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2039&q=80');
-}
-
-.hero .container {
-    display: grid;
-    place-items: center;
-    height: inherit;
-    text-align: center;
-}
-
-.hero .content {
-    color: #FFF;
-}
-
-.hero .content .title {
-    font-size: 3rem;
-}
-
-.hero .content .subtitle {
-    font-size: 1.5rem;
-}
-
-.hero .content .cta-btn {
-    background-color: #000;
-    color: #FFF;
-    display: block;
-    font-size: 1.25rem;
-    margin: auto;
-    margin-top: 1em;
-    padding: .5em 1.5em;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: fit-content;
 }

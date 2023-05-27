@@ -1,6 +1,7 @@
 /*/////////////////////////////////////////////////
         VARIABLES
 /////////////////////////////////////////////////*/
+
 const menuBtn = document.querySelector('.menu-btn');
 const mainNav = document.querySelector('.main-nav');
 
