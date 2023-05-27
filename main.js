@@ -3,7 +3,7 @@
 /////////////////////////////////////////////////*/
 
 const menuBtn = document.querySelector('.menu-btn');
-const mainNav = document.querySelector('.main-nav');
+const mainNav = document.querySelector('.[nav-class]');/*   CHANGE [nav-class] TO YOUR NAV CLASS    */
 
 /*/////////////////////////////////////////////////
         FUNCTIONS

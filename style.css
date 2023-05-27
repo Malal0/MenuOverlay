@@ -23,7 +23,7 @@
                 NAV CLASSES
 ****************************************/
 
-.nav-class {
+.[nav-class] {
     /* border: 1px solid #FFF; */
     position: absolute;
     top: 0;
@@ -34,21 +34,21 @@
     margin-top: 1em;
 }
 
-.nav-class .content {
+.[nav-class] .content {
     display: flex;
 }
 
 /*******site logo*******/
-.nav-class .content .logo {
+.[nav-class] .content .logo {
     margin-right: auto;
 }
 
-.nav-class .content .logo img {
+.[nav-class] .content .logo img {
     height: 40px;
 }
 
 /*******menu btn*******/
-.nav-class .content .menu-btn {
+.[nav-class] .content .menu-btn {
     /* background-color: lightskyblue; */
     cursor: pointer;
     width: 33px;
@@ -59,34 +59,34 @@
     justify-content: space-between;
 }
 
-.nav-class .content .menu-btn .line {
+.[nav-class] .content .menu-btn .line {
     height: 4px;
     width: 100%;
     background-color: white;
     transition: 300ms ease-in-out;
 }
 
-.nav-class.shown .content .menu-btn .line {
+.[nav-class].shown .content .menu-btn .line {
     width: calc(100% + 8px);
     transform: translateX(100%);
     pointer-events: none;
 }
 
-.nav-class.shown .content .menu-btn :first-child {
+.[nav-class].shown .content .menu-btn :first-child {
     transform: translateY(350%) rotate(-225deg);
     opacity: 1;
 }
 
-.nav-class.shown .content .menu-btn :nth-child(2) {
+.[nav-class].shown .content .menu-btn :nth-child(2) {
     opacity: 0;
 }
 
-.nav-class.shown .content .menu-btn :last-child {
+.[nav-class].shown .content .menu-btn :last-child {
     transform: translateY(-350%) rotate(225deg);
     /* opacity: 1; */
 }
 
-.nav-class .content .nav-content {
+.[nav-class] .content .nav-content {
     background-color: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(10px);
     position: fixed;
@@ -102,22 +102,22 @@
     place-items: center;
 }
 
-.nav-class.shown .content .nav-content {
+.[nav-class].shown .content .nav-content {
     transform: translateY(0%);
 }
 
-.nav-class .content .nav-content ul {
+.[nav-class] .content .nav-content ul {
     border: 1px solid white;
     /* height: 100%; */
     display: flex;
     flex-flow: column nowrap;
 }
 
-.nav-class .content .nav-content ul li:not(:last-child) {
+.[nav-class] .content .nav-content ul li:not(:last-child) {
     margin-bottom: 3em;
 }
 
-.nav-class .content .nav-content ul a {
+.[nav-class] .content .nav-content ul a {
     color: #FFF;
     background-color: salmon;
     display: block;
