@@ -3,14 +3,13 @@
 /////////////////////////////////////////////////*/
 
 const menuBtn = document.querySelector('.menu-btn');
-const mainNav = document.querySelector('.[nav-class]');/*   CHANGE [nav-class] TO YOUR NAV CLASS    */
 
 /*/////////////////////////////////////////////////
         FUNCTIONS
 /////////////////////////////////////////////////*/
 
 function toggleMenuOverlay() {
-        mainNav.classList.toggle('shown');
+        document.body.classList.toggle('shown');
 }
 
 /*/////////////////////////////////////////////////
